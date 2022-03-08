@@ -8,3 +8,14 @@ function getRandomColor() {
 
     return colors[indiceRandom]
 }
+let numColores = colors.length;
+let botonMagico = document.querySelector(".btn");
+let fondo = document.querySelector("body");
+let colorFondo;
+
+botonMagico.addEventListener("click", function () {
+    fondo.style.backgroundColor = getRandomColor();
+
+})
+//quiero iterar por el array cada vez que clicko y que me cambie el fondo al color que le toca al array.
+
